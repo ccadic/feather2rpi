@@ -90,7 +90,6 @@ Text GLabel 7300 1480 0    60   Input ~ 0
 SCL
 Text GLabel 8050 1380 0    60   Input ~ 0
 SDA
-NoConn ~ 8200 2580
 NoConn ~ 9000 2580
 NoConn ~ 9000 2480
 Wire Wire Line
@@ -285,8 +284,8 @@ Pos 5755 5675
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 6A 00 00 03 20 08 02 00 00 00 85 E6 BF 
-97 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 09 70 48 59 73 00 00 0B 12 00 00 0B 12 
-01 D2 DD 7E FC 00 00 20 00 49 44 41 54 78 9C 5C BD D9 B2 64 CB 71 1D E8 EE 11 7B CA F9 0C 75 6E 
+97 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 09 70 48 59 73 00 00 0A F0 00 00 0A F0 
+01 42 AC 34 98 00 00 20 00 49 44 41 54 78 9C 5C BD D9 B2 64 CB 71 1D E8 EE 11 7B CA F9 0C 75 6E 
 01 17 A4 2E 21 01 34 A3 11 24 68 46 E0 89 7C EF 9F E1 6F B6 59 BF E8 45 92 B5 5A 26 51 10 01 5E 
 5C D4 3D 43 8E 7B 8A 70 F7 7E 58 B9 83 25 9D 87 B2 53 79 32 F7 8E 1D E1 BE 7C F9 72 8F 48 FE A7 
 7F FA A7 DF FD EE 77 4D D3 6C B7 DB F3 F9 BC DD 6E 37 9B 4D CE F9 F5 F5 35 E7 2C 22 F3 3C BB FB 
@@ -16072,7 +16071,6 @@ Text GLabel 910  4505 0    60   Input ~ 0
 SCL
 Text GLabel 1660 4405 0    60   Input ~ 0
 SDA
-NoConn ~ 1810 5605
 NoConn ~ 2610 5605
 NoConn ~ 2610 5505
 Wire Wire Line
@@ -16191,4 +16189,172 @@ Text Label 2690 6205 0    39   ~ 0
 GPIO21
 Wire Wire Line
 	2610 6205 2690 6205
+Text Label 6280 3180 0    39   ~ 0
+D2
+Wire Wire Line
+	6085 2075 6150 2075
+Text Label 8140 2580 2    39   ~ 0
+D2
+Wire Wire Line
+	8200 2580 8140 2580
+Text Label 1445 1215 2    60   ~ 0
+FSDA
+Text Label 1440 1315 2    60   ~ 0
+FSCL
+Text GLabel 1440 1415 0    60   Input ~ 0
+SDA
+Text GLabel 1440 1535 0    60   Input ~ 0
+SCL
+$Comp
+L Connector:Conn_01x04_Female J3
+U 1 1 5F81E099
+P 1725 1315
+F 0 "J3" H 1753 1291 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 1753 1200 50  0000 L CNN
+F 2 "18650:4padsfree" H 1725 1315 50  0001 C CNN
+F 3 "~" H 1725 1315 50  0001 C CNN
+	1    1725 1315
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1445 1215 1525 1215
+Wire Wire Line
+	1440 1315 1525 1315
+Wire Wire Line
+	1440 1415 1525 1415
+Wire Wire Line
+	1440 1535 1525 1535
+Wire Wire Line
+	1525 1535 1525 1515
+$Comp
+L Device:R_Small R6
+U 1 1 5F851053
+P 1485 1995
+F 0 "R6" V 1545 2110 50  0000 C CNN
+F 1 "4.7k" V 1485 1995 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1485 1995 50  0001 C CNN
+F 3 "~" H 1485 1995 50  0001 C CNN
+	1    1485 1995
+	0    1    1    0   
+$EndComp
+Text Label 1320 1995 2    60   ~ 0
+3v
+Wire Wire Line
+	1385 1995 1320 1995
+Text Label 1640 1995 0    60   ~ 0
+FSDA
+$Comp
+L Device:R_Small R4
+U 1 1 5F86E3F9
+P 1475 2265
+F 0 "R4" V 1535 2380 50  0000 C CNN
+F 1 "4.7k" V 1475 2265 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1475 2265 50  0001 C CNN
+F 3 "~" H 1475 2265 50  0001 C CNN
+	1    1475 2265
+	0    1    1    0   
+$EndComp
+Text Label 1310 2265 2    60   ~ 0
+3v
+Wire Wire Line
+	1375 2265 1310 2265
+Text Label 1650 2265 0    60   ~ 0
+FSCL
+$Comp
+L Device:R_Small R7
+U 1 1 5F87BECF
+P 1490 2575
+F 0 "R7" V 1550 2690 50  0000 C CNN
+F 1 "4.7k" V 1490 2575 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1490 2575 50  0001 C CNN
+F 3 "~" H 1490 2575 50  0001 C CNN
+	1    1490 2575
+	0    1    1    0   
+$EndComp
+Text Label 1325 2575 2    60   ~ 0
+3v
+Wire Wire Line
+	1390 2575 1325 2575
+$Comp
+L Device:R_Small R5
+U 1 1 5F87BEDC
+P 1480 2845
+F 0 "R5" V 1540 2960 50  0000 C CNN
+F 1 "4.7k" V 1480 2845 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1480 2845 50  0001 C CNN
+F 3 "~" H 1480 2845 50  0001 C CNN
+	1    1480 2845
+	0    1    1    0   
+$EndComp
+Text Label 1315 2845 2    60   ~ 0
+3v
+Wire Wire Line
+	1380 2845 1315 2845
+Text GLabel 1700 2575 2    60   Input ~ 0
+SDA
+Text GLabel 1700 2850 2    60   Input ~ 0
+SCL
+Wire Wire Line
+	1580 2845 1700 2845
+Wire Wire Line
+	1700 2845 1700 2850
+Wire Wire Line
+	1590 2575 1700 2575
+Wire Wire Line
+	1575 2265 1650 2265
+Wire Wire Line
+	1585 1995 1640 1995
+Text Label 1745 5605 2    39   ~ 0
+D2
+Wire Wire Line
+	1745 5605 1810 5605
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F8D6D62
+P 7560 4900
+F 0 "H2" H 7660 4900 50  0000 L CNN
+F 1 "MountingHole" H 7660 4855 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7560 4900 50  0001 C CNN
+F 3 "~" H 7560 4900 50  0001 C CNN
+	1    7560 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F8D7613
+P 7565 5110
+F 0 "H3" H 7665 5110 50  0000 L CNN
+F 1 "MountingHole" H 7665 5065 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7565 5110 50  0001 C CNN
+F 3 "~" H 7565 5110 50  0001 C CNN
+	1    7565 5110
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F8D7EA9
+P 7565 5305
+F 0 "H4" H 7665 5305 50  0000 L CNN
+F 1 "MountingHole" H 7665 5260 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7565 5305 50  0001 C CNN
+F 3 "~" H 7565 5305 50  0001 C CNN
+	1    7565 5305
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F8D8287
+P 7555 5520
+F 0 "H1" H 7655 5520 50  0000 L CNN
+F 1 "MountingHole" H 7655 5475 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7555 5520 50  0001 C CNN
+F 3 "~" H 7555 5520 50  0001 C CNN
+	1    7555 5520
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6280 3180 6150 3180
+Wire Wire Line
+	6150 3180 6150 3175
+NoConn ~ 6150 2075
 $EndSCHEMATC

@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 711)
+    (start_pass_no 6945)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -77,7 +77,8 @@
     /MOSI /SCK "Net-(D1-Pad2)" /FRST /A0 /A1 /A2 /A3
     /A4 /A5 /GPIO4 /GPIO5 /GPIO6 /GPIO12 /GPIO13 /GPIO16
     /GPIO18 /GPIO19 /GPIO20 /GPIO21 /GPIO23 /GPIO26 /F5 /F6
-    /F9 /F11 /F12 /F13
+    /F9 /F11 /F12 /F13 /FSDA /FSCL SDA SCL
+    "Net-(PI1-Pad28)" "Net-(PI1-Pad26)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
